@@ -16,3 +16,43 @@ console.log(company.split(','))
 
 let change = challenge.replace('Javascript', 'Python')
 console.log(change)
+
+let checkIndex  = '30 Days Of JavaScript'
+console.log(checkIndex.charAt(15)) //S 
+console.log(checkIndex.charCodeAt('J')) //51
+ 
+
+let text = '30 Days Of JavaScript'
+
+console.log(text.indexOf('a')) //4
+ 
+
+let sentence = 'You cannot end a sentence with because because because is a conjunction'
+
+console.log(sentence.indexOf('because')) //31
+console.log(sentence.lastIndexOf('because')) //47
+console.log(sentence.search('because')) //31
+
+let removeSpace = ' 30 Days Of JavaScript '
+
+console.log(removeSpace.trim())
+
+let checkStart = '30 Days Of JavaScript'
+let checkEnd = '30 Days Of JavaScript'
+
+console.log(checkStart.startsWith('30'))
+console.log(checkEnd.endsWith('JavaScript'))
+
+
+//match
+
+let findMatch = '30 Days Of JavaScript'
+
+console.log(findMatch.match('/a/gi'))
+
+console.log(findMatch.repeat(2))
+
+
+let stringConcat = '30 Days Of'
+
+console.log(stringConcat.concat(' JavaScript'))
