@@ -79,8 +79,9 @@ let extractNumbers = problemText.match(/\d+/g)
 const num1 = Number(extractNumbers[0])
 const num2 = Number(extractNumbers[1])
 const num3 = Number(extractNumbers[2])
+const annual = 12
 
-const sum = (num1 * 12) + (num3 * 12) + num2
+const sum = (num1 * annual) + (num3 * annual) + num2
 
 console.log(sum)
 
