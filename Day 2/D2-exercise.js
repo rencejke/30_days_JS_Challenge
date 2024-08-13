@@ -56,3 +56,12 @@ console.log(findMatch.repeat(2))
 let stringConcat = '30 Days Of'
 
 console.log(stringConcat.concat(' JavaScript'))
+
+
+let challengeText = 'You cannot end a sentence with because because because is a conjunction'
+
+let getSubstring = challengeText.substr(31, 23)
+
+let sliceString = getSubstring.slice()
+
+console.log(sliceString)
