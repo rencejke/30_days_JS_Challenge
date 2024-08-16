@@ -76,7 +76,7 @@ let extractNumbers = problemText.match(/\d+/g)
 // g means global search
 // result  is ['5000', '10000', '15000']
 
-const num1 = Number(extractNumbers[0])
+const num1 = Number(extractNumbers[0]) //convert the string array into Number
 const num2 = Number(extractNumbers[1])
 const num3 = Number(extractNumbers[2])
 const annual = 12
