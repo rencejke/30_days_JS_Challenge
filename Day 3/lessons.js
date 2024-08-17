@@ -151,5 +151,34 @@ console.log(now5.getDay()) // 6
 //Sunday = 0, Monday = 1
 
 
+//getting hours
+
+const now6 = new Date()
+console.log(now6.getHours()) // 14 (local time) 0-23 0 means midnight and 23 means 11pm
+
+//getting minutes
+
+const minutes = new Date()
+console.log(minutes.getMinutes()) //50 because 10:50pm now
+
+//getting seconds
+
+const seconds = new Date()
+console.log(seconds.getSeconds())//36  because 10:51:36pm now
+
+//getting Time
+
+const time = new Date() 
+console.log(time.getTime()) //1723906406771
+
+//using date now
+
+const allSeconds = Date.now() 
+console.log(allSeconds) // 1578092201341, this is the number of seconds passed from January 1, 1970 to January 4, 2020 00:56:41
+
+const timeInSeconds = new Date().getTime()
+console.log(allSeconds == timeInSeconds) // true
+
+
 
 
