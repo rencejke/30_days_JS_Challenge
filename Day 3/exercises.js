@@ -188,6 +188,113 @@ const circumference = 2 * pi2 * r
 console.log(`The circumference of a circle is ${circumference}`)
 
 
+//Calculate the slope, x-intercept and y-intercept of y = 2x -2
+
+const m = 2 //slope
+const b = -2 //y intercept
+
+const slope = m;
+const yIntercept = b;
+
+//compute x-intercept
+const xIntercept = -b / m 
+
+console.log(`Slope: ${slope}`) //2
+console.log(`Y-Intercept: ${yIntercept}`) //-2
+console.log(`Y-Intercept: ${xIntercept}`) //1
+
+
+//Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
+
+const x1 = 2
+const y1 = 2
+
+const x2 = 6
+const y2 = 10
+
+const computeSlope = (y2 -y1) / (x2 - x1)
+
+console.log(computeSlope)
+
+
+//compare two slopes above
+
+slope === computeSlope ? console.log(true) : console.log(false) //true
+
+
+//Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+
+let numX = -3
+
+let conputeY = y = (numX ** 2) + (6 * numX)  + 9 
+
+console.log(conputeY) //0
+
+
+//9
+
+//calculate rate per hour
+let hoursNow = Number(prompt('Enter hours'))
+let ratePerHour = Number(prompt('Enter rate per hour'))
+
+let pay = hoursNow * ratePerHour
+
+console.log(pay)
+
+//10
+
+//check your name length is lomg or short
+let first_Name = 'Clarence'
+
+first_Name.length > 7 ? console.log(`your name is long`) : (' your name is short') //your name is long
+
+
+//11 
+let firstName2 = 'Clarence'
+let lastName2 = 'Bonilla'
+
+firstName2.length > lastName2.length ? console.log(`Your first name, ${firstName2} is longer than your family name, ${lastName2}`) 
+: console.log(`Your first name, ${firstName2} is shorter than your family name, ${lastName2}`) //Your first name, Clarence is longer than your family name, Bonilla
+
+//12
+
+let myAge = 23
+let yourAge = 18
+
+myAge > yourAge ? console.log(`I am ${myAge - yourAge} years older than you.`) : console.log(`You are ${yourAge - myAge} years older than me.`) //I am 3 years older than you.
+
+
+//13
+let birthYear = Number(prompt('Enter birth year'))
+const dateNow = new Date()
+const yearToday = dateNow.getFullYear()
+const legalAge = 18
+
+const checkRequirement = yearToday - birthYear
+
+checkRequirement >= legalAge ? console.log(`You are ${checkRequirement}. You are old enough to drive`) : console.log(`You are ${checkRequirement}. You are not old enough to drive`)
+
+
+//14
+let yearsLive = Number(prompt('Enter number of years you live'))
+const dateNow2 = new Date()
+
+//seconds in one year
+const secondsInYear = 365 * 24 * 60 * 60
+
+const secondsLive = yearsLive * secondsInYear
+
+console.log(`You lived ${Math.floor(secondsLive)} seconds`) //You lived 3153600000 seconds
+
+
+
+
+
+
+
+
+
+
 
 
 
