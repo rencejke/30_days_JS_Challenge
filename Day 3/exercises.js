@@ -280,11 +280,99 @@ let yearsLive = Number(prompt('Enter number of years you live'))
 const dateNow2 = new Date()
 
 //seconds in one year
-const secondsInYear = 365 * 24 * 60 * 60
+const secondsInYear = 365 * 24 * 60 * 60  //days // hours //minutes //seconds
 
 const secondsLive = yearsLive * secondsInYear
 
 console.log(`You lived ${Math.floor(secondsLive)} seconds`) //You lived 3153600000 seconds
+
+
+//15
+
+//readable time format
+
+const date3 = new Date()
+
+const yearNow = date3.getFullYear()
+const monthNow = date3.getMonth()
+const dayNow = date3.getDay()
+const hoursNoww = date3.getHours()
+const hoursNoww2 = ("0" + hoursNoww).slice(-2) // format the current hour in a two digit format //-2 takes the last two characters of string
+const minutesNow = date3.getMinutes()
+const minutesNow2 = ("0" + minutesNow).slice(-2) // format the minutes hour in a two digit format
+
+
+console.log(`${yearNow}-${monthNow}-${dayNow} ${hoursNoww}:${minutesNow}`) //YYYY-MM-DD HH:mm
+console.log(`${dayNow}-${monthNow}-${yearNow} ${hoursNoww}:${minutesNow}`) //DD-MM-YYYY HH:mm
+console.log(`${dayNow}/${monthNow}/${yearNow} ${hoursNoww}:${minutesNow}`) //DD/MM/YYYY HH:mm
+
+/* result
+
+2024-7-2 14:32
+2-7-2024 14:32
+2/7/2024 14:32
+
+*/
+
+//exercise level 3
+
+console.log(`${yearNow}-${monthNow}-${dayNow} ${hoursNoww2}:${minutesNow2}`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
