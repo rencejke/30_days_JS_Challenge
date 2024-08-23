@@ -128,9 +128,36 @@ else if(days == 'monday' ||  days == 'tuesday' || days == 'wednesday' || days ==
     console.log(`${days} is a working day`)
 }
 
-//4
+//4 and 5
 
 
+let input = prompt('Enter a month:')
+let monthInput = input.toLowerCase()
 
+let date = new Date()
+let year = date.getFullYear() 
+
+switch(true)
+{
+    case monthInput === 'january' || monthInput === 'march'|| monthInput === 'may' || monthInput === 'july' || monthInput === 'august' || monthInput === 'october'|| monthInput === 'december': 
+         console.log(`${monthInput} has 31 days`)
+    break;
+    case monthInput === 'april' || monthInput === 'june'|| monthInput === 'september' || monthInput === 'november': 
+        console.log(`${monthInput} has 30 days`)
+    break;
+    case monthInput === 'february':
+        if((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) //calculate leap year
+        {
+            console.log(`${monthInput} has 29 days`)
+        }
+        else
+        {
+            console.log(`${monthInput} has 28 days`)
+        }
+    break;
+     default:
+     console.log('error')
+    
+}
 
 
