@@ -48,8 +48,35 @@ if (checkd === -1) {
 
 
 //filter
+//extracting elements from arrays based on certain conditions.
 const filterOut = itCompanies3.filter(company => company.includes('o')) //[ 'Facebook', 'Google', 'Microsoft', 'Amazon' ]
 console.log(filterOut)
+
+//sort
+const itCompanies4 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+
+itCompanies4.sort()
+console.log(itCompanies4)
+
+//reverse
+itCompanies4.reverse()
+console.log(itCompanies4)
+
+
+//Slice out the first 3 companies from the array
+
+//['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+
+
+console.log(itCompanies4.slice(0, 3)) //[ 'Facebook', 'Google', 'Microsoft' ]
+
+//Slice out the last 3 companies from the array
+console.log(itCompanies4.slice(4, 7)) //[ 'IBM', 'Oracle', 'Amazon' ]
+
+
+//Slice out the middle IT company or companies from the array
+console.log(itCompanies4.slice(3, 4)) //[ 'Apple' ]
+
 
 
 
