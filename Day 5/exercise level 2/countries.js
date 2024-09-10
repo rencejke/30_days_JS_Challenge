@@ -1,0 +1,1 @@
+export const countries = ['China', 'America', 'Korea', 'Paris', 'Philippines', 'Japan'];

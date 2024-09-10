@@ -80,6 +80,32 @@ console.log(itCompanies4.slice(3, 4)) //[ 'Apple' ]
 
 
 
+//Remove the first IT company from the array
+const itCompanies5 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+itCompanies5.shift()
+console.log(itCompanies5)
+
+
+//Remove the middle IT company from the array
+const itCompanies6 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+const deleteMiddle = itCompanies6.slice(3,4)
+console.log(deleteMiddle)//Apple
+
+//Remove the last IT company from the array
+const itCompanies7 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+const deleteEnd = itCompanies7.slice(6,7)
+console.log(deleteEnd)//Amazon
+
+
+const itCompanies8 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'].splice()
+console.log(itCompanies8) //[] empty array
+
+
+
+
+
+
+
 
 
 
