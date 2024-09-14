@@ -336,13 +336,38 @@ let compare2 = Math.abs(Math.max(...ages5) - average2)
     'Yemen',
     'Zambia',
     'Zimbabwe'
-  ]
+  ]//193 (count)
   
   const count = countries2.length / 2 //96,5
   const roundUp = Math.ceil(count) // 97
   
   console.log(countries2[roundUp]) //Liberia is in the middle
   
+
+  //Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
+   
+  const firstHalf = countries2.slice(0,96)  //.slice(Math.ceil(countries2.length / 2))
+  const secondHalf = countries2.slice(96, 193)
+  
+  
+  //1st half and second half
+  console.log(firstHalf)
+  console.log(secondHalf)
+  
+  if(secondHalf > firstHalf)
+  {  
+      //add  the  extra item of secondhalf to the  first half
+      const extraItem = secondHalf.shift()
+      firstHalf.push(extraItem)
+      console.log(firstHalf)
+      
+  }
+  else{
+      console.log('Array is equal')
+  }
+
+   
+
 
 
     
