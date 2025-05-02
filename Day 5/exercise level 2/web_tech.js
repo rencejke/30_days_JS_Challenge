@@ -1,1 +1,0 @@
-export const webTechs = ['ReactJS', 'HTML', 'JS', 'CSS', 'Bootstrap', 'Tailwind']
