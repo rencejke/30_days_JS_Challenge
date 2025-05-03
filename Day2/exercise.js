@@ -206,6 +206,73 @@ console.log('1\t1\t1\t1\t1\n2\t1\t2\t4\t8\n3\t1\t3\t9\t27\n4\t1\t4\t16\t63\n5\t1
 
 //12
 
+let fsentence  = "You cannot end a sentence with because because because is a conjunction"
+
+console.log(fsentence.substr(30, 24)) // because because because
+
+
+
+
+
+const nums = [2,7,11,15]
+let targetRandom = Math.floor(Math.random() * nums.length - 1) 
+let target = 22
+
+let indices = nums[targetRandom] + nums[targetRandom]
+
+
+if(indices == target)
+{
+    console.log('Matched')
+}
+else
+{
+   console.log('Mismatched')
+}
+
+//Exercise Level 3
+
+//1
+let text = 'Love is the best thing in this world. Some found their love and some are still looking for their love.' 
+let count = text.match(/love/gi).length
+console.log(count) //3
+
+
+//2
+let text4 = "You cannot end a sentence with because because because is a conjunction"
+let count2 = text4.match(/because/gi).length
+console.log(count2) //3
+
+
+//3
+    const sentence2 = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+    console.log(sentence2.replace(/[%@#&;$]/g, ''));
+    //I am a teacher, and I love teaching. There is nothing as more rewarding as educating and empowering people. I found teaching more interesting than any other jobs. Does this motivate you to be a teacher!? This 30DaysOfJavaScript is also the result of love of teaching
+
+//4
+
+let text5 = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month'
+let extraact = text5.match(/\d+/g)
+let sum = parseInt(extraact[0] * 12) +  parseInt(extraact[1]) +  parseInt(extraact[2]  * 12)
+
+console.log(sum) //250000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
