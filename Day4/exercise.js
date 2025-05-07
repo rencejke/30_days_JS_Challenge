@@ -62,31 +62,92 @@ else
 
 //Exercises: Level 2
 
+//1
 let getGrade = Number(prompt("Please input your grade here"))
 
-switch(getGrade)
-{
-    case getGrade >= 80  && getGrade <= 100:
+ if(getGrade >= 90  && getGrade <= 100){
     alert(`Your Grade ${getGrade} is A`)
-    break
-
-    case getGrade >= 70  && getGrade <= 89:
+ }
+ else if( getGrade >= 70  && getGrade <= 89)
+ {
     alert(`Your Grade ${getGrade} is B`)
-    break
-
-    case getGrade >= 60  && getGrade <= 69:
+ }
+ else if(getGrade >= 60  && getGrade <= 69)
+{
     alert(`Your Grade ${getGrade} is C`)
-    break
-
-    case getGrade >= 50  && getGrade <= 59:
-    alert(`Your Grade ${getGrade} is D`)
-    break
-
-    case getGrade >= 0  && getGrade <= 49:
-    alert(`Your Grade ${getGrade} is D`)
-    break
-
-    default:
-        alert(`your gradee is out of range`)
-
 }
+else if(getGrade >= 50  && getGrade <= 59)
+{
+    alert(`Your Grade ${getGrade} is C`)
+}
+
+else if(getGrade >= 0  && getGrade <= 49)
+{
+    alert(`Your Grade ${getGrade} is C`)
+}
+else
+{
+    alert(`your grade is out of range`)
+}
+        
+//2
+let day = prompt("What day is today?").toLowerCase()
+
+switch (day) {
+    case 'monday':
+        alert(`Monday is a working day`)
+      break
+    case 'tuesday':
+        alert(`Tuesday is a working day`)
+      break
+    case 'wednesday':
+        alert(`Wednesday is a working day`)
+      break
+    case 'thursday':
+      calert(`Thursday is a working day`)
+      break
+    case 'friday':
+      calert(`Friday is a working day`)
+      break
+    case 'saturday':
+        alert(`Saturday is a weekend`)
+      break
+    case 'sunday':
+        alert(`Sunday is a weekend`)
+      break
+    default:
+      alert('It is not a week day.')
+  }
+
+
+//3
+  let month = prompt("Enter the month here").toLowerCase()
+
+  if(month == 'september' || month == 'october' || month == 'november')
+  {
+    alert(`Autumn`)
+  }
+  else if(month == 'december' || month == 'january' || month == 'february')
+  {
+      alert(`Winter`)
+  }
+  else if(month == 'march' || month == 'april' || month == 'may')
+    {
+      alert(`Spring`)
+    }
+   else if(month == 'june' || month == 'july' || month == 'august')
+  {
+        alert(`Summer`)
+   }
+   else
+   {
+        alert(`It is not a month`)
+   }
+  
+   //4
+   const dayMonth = prompt("Enter the month here").toLowerCase()
+   const date = new Date()
+
+   const getDays = date.getDate()
+
+  
