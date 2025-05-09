@@ -147,8 +147,7 @@ switch (day) {
    //4
    const dayMonth = prompt("Enter the month here").toLowerCase()
 
-
-   if(dayMonth == "january" || dayMonth == "march" || dayMonth == "may" || dayMonth == "july" || dayMonth == "august")
+   if(dayMonth == "january" || dayMonth == "march" || dayMonth == "may" || dayMonth == "july" || dayMonth == "august" || dayMonth == "october" || dayMonth == "december")
    {
       alert(`${dayMonth} has 31 days.`)
    }
@@ -164,6 +163,45 @@ switch (day) {
    {
     alert(`Unknown Date`)
    }
+
+
+   //5
+   const dayMonths = prompt("Enter the month here").toLowerCase()
+   const datee = new Date()
+   const year = datee.getFullYear() 
+
+   if(dayMonths == "january" || dayMonths == "march" || dayMonths == "may" || dayMonths == "july" || dayMonths == "august" || dayMonths == "october" || dayMonths == "december")
+   {
+      alert(`${dayMonths} has 31 days.`)
+   }
+   else if(dayMonths == "april" || dayMonths == "june" || dayMonths == "september" || dayMonths == "november")
+   {
+      alert(`${dayMonths} has 30 days.`)
+   }
+   else if (dayMonths == "february")
+   {
+      if(year % 4 == 0)
+      {
+        alert(`${dayMonths} has 29 days.`)
+      }
+      else
+      {
+        alert(`${dayMonths} has 28 days.`)
+      }
+   }
+   else
+   {
+    alert(`Unknown Date`)
+   }
+   
+   
+
+
+
+   
+
+
+
 
 
 
