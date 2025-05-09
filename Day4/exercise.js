@@ -146,8 +146,25 @@ switch (day) {
   
    //4
    const dayMonth = prompt("Enter the month here").toLowerCase()
-   const date = new Date()
 
-   const getDays = date.getDate()
+
+   if(dayMonth == "january" || dayMonth == "march" || dayMonth == "may" || dayMonth == "july" || dayMonth == "august")
+   {
+      alert(`${dayMonth} has 31 days.`)
+   }
+   else if(dayMonth == "april" || dayMonth == "june" || dayMonth == "september" || dayMonth == "november")
+   {
+      alert(`${dayMonth} has 30 days.`)
+   }
+   else if (dayMonth == "february")
+   {
+      alert(`${dayMonth} has 28 days.`)
+   }
+   else
+   {
+    alert(`Unknown Date`)
+   }
+
+
 
   
