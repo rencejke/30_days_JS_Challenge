@@ -24,5 +24,63 @@ const mixedDataTypes = ['Kim Chaewon', 24, {firstGroup: 'IZONE', secondGroup:'LE
 console.log(mixedDataTypes.length) //8
 
 
+//6 Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+
+const itCompanies = ['Facebook', 'Google','Microsoft', 'Apple', 'IBM', 'Oracle',  'Amazon']
+
+//7 Print the array using console.log()
+console.log(itCompanies)
+
+//8 Print the number of companies in the array
+console.log(itCompanies.length) //7
+
+//9
+console.log(itCompanies[0]) //Facebook
+console.log(itCompanies[4]) //Apple
+console.log(itCompanies[6]) //Amazon
+
+
+//10
+console.log(itCompanies[0]) //Facebook
+console.log(itCompanies[1]) //Google
+console.log(itCompanies[2]) //Microsoft
+console.log(itCompanies[3]) //Apple
+console.log(itCompanies[4]) //IBM
+console.log(itCompanies[5]) //Oracle
+console.log(itCompanies[6]) //Amazon
+
+//11
+const convertCase = itCompanies.toString()
+console.log(convertCase.toLowerCase())
+
+//12
+console.log(convertCase.concat(' are big IT companies.'))
+
+
+//13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
