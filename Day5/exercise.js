@@ -35,12 +35,14 @@ console.log(itCompanies)
 console.log(itCompanies.length) //7
 
 //9
+//const itCompanies = ['Facebook', 'Google','Microsoft', 'Apple', 'IBM', 'Oracle',  'Amazon']
 console.log(itCompanies[0]) //Facebook
 console.log(itCompanies[4]) //Apple
 console.log(itCompanies[6]) //Amazon
 
 
 //10
+//const itCompanies = ['Facebook', 'Google','Microsoft', 'Apple', 'IBM', 'Oracle',  'Amazon']
 console.log(itCompanies[0]) //Facebook
 console.log(itCompanies[1]) //Google
 console.log(itCompanies[2]) //Microsoft
@@ -58,6 +60,54 @@ console.log(convertCase.concat(' are big IT companies.'))
 
 
 //13
+const itCompanies2 = ['Facebook', 'Google','Microsoft', 'Apple', 'IBM', 'Oracle',  'Amazon']
+
+const askCompanies = prompt('Enter here to check if the company exist in the array', 'Enter here in Sentence Case format')
+const checkCompanies = itCompanies2.includes(askCompanies)
+
+checkCompanies == true ? console.log(askCompanies) : console.log('Company is not found')
+
+
+//14
+console.log(itCompanies2.slice(2, itCompanies.length)) //[ 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon' ]
+
+//15
+console.log(itCompanies2.sort()) //['Amazon','Apple', 'Facebook', 'Google','IBM','Microsoft','Oracle']
+
+//16
+console.log(itCompanies2.reverse()) //[ 'Amazon', 'Oracle','IBM','Apple','Microsoft','Google','Facebook']
+
+//17
+console.log(itCompanies2.slice(0, 4)) //[ 'Facebook', 'Google', 'Microsoft' ]
+
+//18
+console.log(itCompanies2.slice(4, itCompanies2.length))  //[ 'IBM', 'Oracle', 'Amazon' ]
+
+//19
+console.log(itCompanies2.slice(3, 4)) //[ 'Apple' ]
+ 
+//20
+console.log(itCompanies2.shift()) //['Google','Microsoft', 'Apple', 'IBM', 'Oracle',  'Amazon']
+
+//21
+console.log(itCompanies2.splice(2, 3))
+
+//22
+const itCompanies3 = ['Facebook', 'Google','Microsoft', 'Apple', 'IBM', 'Oracle',  'Amazon']
+const removedData = itCompanies3.splice(3, 3)
+console.log(removedData.splice(0, 1));
+
+//23
+console.log(itCompanies3.pop()) //['Facebook', 'Google','Microsoft', 'Apple', 'IBM', 'Oracle']
+
+//24
+console.log(itCompanies3.splice()) //empty array -- removes all iteem in the array
+
+//Exercise Level 2
+
+
+
+
 
 
 
