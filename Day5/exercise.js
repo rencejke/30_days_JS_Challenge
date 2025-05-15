@@ -67,7 +67,6 @@ const checkCompanies = itCompanies2.includes(askCompanies)
 
 checkCompanies == true ? console.log(askCompanies) : console.log('Company is not found')
 
-
 //14
 console.log(itCompanies2.slice(2, itCompanies.length)) //[ 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon' ]
 
@@ -94,8 +93,8 @@ console.log(itCompanies2.splice(2, 3))
 
 //22
 const itCompanies3 = ['Facebook', 'Google','Microsoft', 'Apple', 'IBM', 'Oracle',  'Amazon']
-const removedData = itCompanies3.splice(3, 3)
-console.log(removedData.splice(0, 1));
+const removedData = itCompanies3.splice(3, 3) //remove the first 3 items in the array and stored in this variable
+console.log(removedData.splice(0, 1)); //removed the first time
 
 //23
 console.log(itCompanies3.pop()) //['Facebook', 'Google','Microsoft', 'Apple', 'IBM', 'Oracle']
@@ -105,12 +104,57 @@ console.log(itCompanies3.splice()) //empty array -- removes all iteem in the arr
 
 //Exercise Level 2
 
+//1
+import { webTechs } from './web_techs.js';
+import { countries } from './countries.js';
+
+console.log(webTechs)
+console.log(countries)
+
+//2
+let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+
+const arrayNew = text.split(' ')
+console.log(arrayNew) //["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
+console.log(arrayNew.length) //13
 
 
+//3
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
 
+if(shoppingCart.includes('Meat'))
+{
+    console.log('Meat are not inside the array')
+}
+else{
+    shoppingCart.unshift('Meat')
+    console.log(shoppingCart) //[ 'Meat', 'Milk', 'Coffee', 'Tea', 'Honey' ]
+}
 
+if(shoppingCart.includes('Sugar'))
+{
+    console.log('Sugar are not inside the array')
+}
+else{
+    shoppingCart.push('Sugar')
+    console.log(shoppingCart) //[ 'Meat', 'Milk', 'Coffee', 'Tea', 'Honey', 'Sugar' ]
+}
 
+shoppingCart[3] = 'Green Tea'
+console.log(shoppingCart) //[ 'Meat', 'Milk', 'Coffee', 'Green Tea', 'Honey', 'Sugar' ]
 
+//4
+//import { countries } from './countries.js';
+
+if(countries.includes('Ethiopia'))
+{
+   console.log('ETHIOPIA')
+}
+else
+{
+    countries.push('Ethopia')
+    console.log(countries)
+}
 
 
 
