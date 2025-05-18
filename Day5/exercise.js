@@ -434,7 +434,17 @@ const countries2 = [
   /*['Afghanistan', 'Albania', 'Algeria','Andorra','Angola', 
   'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria','Azerbaijan'] */
 
+ const middleCountries = Math.ceil(countries2.length / 2) //97
 
+ console.log(countries2[middleCountries]) //Liberia
+
+
+
+ //3
+ const half1 = Math.ceil(countries2.length / 2 + 1)
+ const half2 = countries2.slice(half1, countries2.length)
+ console.log(countries2.slice(0, half1))
+ console.log(half2)
 
 
 
