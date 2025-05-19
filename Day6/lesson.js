@@ -62,6 +62,57 @@ for(let i = 0; i < numbers2.length; i++){
 console.log(newArr)  // [1, 4, 9, 16, 25]
 
 
+const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+const newArr2 = []
+for(let i = 0; i < countries.length; i++){
+  newArr.push(countries[i].toUpperCase())
+}
+
+console.log(newArr2)  // ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
 
 
+
+//while loop
+let i = 0
+while (i <= 5) {
+  console.log(i)
+  i++
+}
+
+// 0 1 2 3 4 5
+
+//We use for of loop for arrays. It is very hand way to iterate 
+// through an array if we are not interested in the index of each element in the array.
+for (const element of arr) {
+  // code goes here
+}
+
+
+
+const numbers3 = [1, 2, 3, 4, 5]
+
+// adding all the numbers in the array
+let sum2 = 0
+for (const num of numbers3) {
+  sum2 = sum2 + num  
+	// can be also shorten like this, sum += num
+  // after this we will use the shorter synthax(+=, -=, *=, /= etc)
+}
+console.log(sum2) // 15
+
+
+
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
+
+for (const tech of webTechs) {
+  console.log(tech[0])  // get only the first letter of each element,  H C J R N M
+}
 
