@@ -81,6 +81,13 @@ while (i <= 5) {
 
 // 0 1 2 3 4 5
 
+//do while
+let j = 0
+do {
+  console.log(j)
+  j++
+} while (j <= 5)
+
 //We use for of loop for arrays. It is very hand way to iterate 
 // through an array if we are not interested in the index of each element in the array.
 for (const element of arr) {
@@ -115,4 +122,43 @@ const webTechs = [
 for (const tech of webTechs) {
   console.log(tech[0])  // get only the first letter of each element,  H C J R N M
 }
+
+const countries2 = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+const newArr3 = []
+for(const country of countries2){
+  newArr.push(country.toUpperCase())
+}
+
+console.log(newArr3)  // ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
+
+
+//break
+//Break is used to interrupt a loop.
+
+for(let i = 0; i <= 5; i++){
+  if(i == 3){
+    break
+  }
+  console.log(i)
+}
+
+// 0 1 2
+
+//We use the keyword continue to skip a certain iterations.
+
+for(let i = 0; i <= 5; i++){
+  if(i == 3){
+    continue
+  }
+  console.log(i)
+}
+
+// 0 1 2 4 5
+
+
+
+
+
+
+
 
