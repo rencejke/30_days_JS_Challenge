@@ -75,6 +75,55 @@ for(i = 1; i <= 7; i++)
     ######
     #######
  */
+
+//5 Use loop to print the following pattern:
+
+for(let i = 0; i <= 10; i++)
+{
+    console.log(`${i} * ${i} = ${i * i}`)
+}
+
+
+//6 Use loop to print the following pattern:
+for(let i = 0; i <= 10; i++)
+{
+    console.log(`${i}\t${i ** 2}\t${i ** 3}`);
+    
+}
+
+//7 Use for loop to iterate from 0 to 100 and print only even numbers
+let m = 0
+do{
+    m++ //increment
+
+    if(m % 2 === 0) //check 
+    {
+        console.log(m)
+    }
+}while(m <= 100)
+
+//8 Use for loop to iterate from 0 to 100 and print only even numbers
+let odd = 1
+do{
+   
+    if(odd % 2 != 0) //check first
+    {
+        console.log(odd)
+    }
+      odd++ // then increment
+}while(odd <= 100)
+
+
+//9 Use for loop to iterate from 0 to 100 and print only prime numbers
+
+
+
+
+
+
+
+
+
     
 
 
